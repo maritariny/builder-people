@@ -37,6 +37,7 @@ public class Person {
     public PersonBuilder newChildBuilder() {
         PersonBuilder childBuilder = new PersonBuilder()
                 .setSurname(this.surname)
+                .setAddress(this.address)
                 .setAge(0);
         return childBuilder;
     }
